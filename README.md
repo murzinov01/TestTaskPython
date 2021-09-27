@@ -7,8 +7,8 @@ Test task implementation for STM Labs
 * **py main.py file_to_data ip_type**  
 
 Examples:
-    + **py main.py data/ipv4_data_set.txt ipv4**
-    + **py main.py data/ipv6_data_set.txt ipv6**
+ *   **py main.py data/ipv4_data_set.txt ipv4**
+ *   **py main.py data/ipv6_data_set.txt ipv6**
 
 You can also check test coverage by the following instruction:  
 In TestTaskPython directory:
