@@ -4,6 +4,11 @@ from subnet_finder import SubnetFinder
 
 
 def check_args(args: list) -> bool:
+    """
+    Check input arguments
+    :param args: List should contains valid file_name and valid id_type ("ipv4" or "ipv6)
+    :return: True is args is valid, False otherwise
+    """
     if len(args) != 2:
         print(f"Invalid number of parameters ({len(args)}). Must be main.py file_name ip_type")
         return False

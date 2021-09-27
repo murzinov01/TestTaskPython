@@ -19,31 +19,31 @@ class TestTranslationFunctions(unittest.TestCase):
 
     def test_binary_to_dec_1(self):
         subnet_finder = SubnetFinder("test.txt", "ipv4")
-        self.assertEqual(subnet_finder._convert_to_dec("10101000"), 168)
+        self.assertEqual(subnet_finder._convert_binary_to_dec("10101000"), 168)
 
     def test_binary_to_dec_2(self):
         subnet_finder = SubnetFinder("test.txt", "ipv4")
-        self.assertEqual(subnet_finder._convert_to_dec("00000000"), 0)
+        self.assertEqual(subnet_finder._convert_binary_to_dec("00000000"), 0)
 
     def test_binary_to_dec_3(self):
         subnet_finder = SubnetFinder("test.txt", "ipv4")
-        self.assertEqual(subnet_finder._convert_to_dec("0"), 0)
+        self.assertEqual(subnet_finder._convert_binary_to_dec("0"), 0)
 
     def test_binary_to_dec_4(self):
         subnet_finder = SubnetFinder("test.txt", "ipv4")
-        self.assertEqual(subnet_finder._convert_to_dec("11111111"), 255)
+        self.assertEqual(subnet_finder._convert_binary_to_dec("11111111"), 255)
 
     def test_hex_to_dec_1(self):
         subnet_finder = SubnetFinder("test.txt", "ipv4")
-        self.assertEqual(subnet_finder._convert_to_dec("ffe0", _pow=16), 65504)
+        self.assertEqual(subnet_finder._convert_binary_to_dec("ffe0", base=16), 65504)
 
     def test_hex_to_dec_2(self):
         subnet_finder = SubnetFinder("test.txt", "ipv4")
-        self.assertEqual(subnet_finder._convert_to_dec("0", _pow=16), 0)
+        self.assertEqual(subnet_finder._convert_binary_to_dec("0", base=16), 0)
 
     def test_hex_to_dec_3(self):
         subnet_finder = SubnetFinder("test.txt", "ipv4")
-        self.assertEqual(subnet_finder._convert_to_dec("f", _pow=16), 15)
+        self.assertEqual(subnet_finder._convert_binary_to_dec("f", base=16), 15)
 
     def test_dec_to_hex_1(self):
         subnet_finder = SubnetFinder("test.txt", "ipv4")
