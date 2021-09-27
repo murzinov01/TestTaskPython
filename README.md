@@ -15,3 +15,5 @@ In TestTaskPython directory:
 * **cd test**
 * **py input_tests.py**
 * **py regression_tets.py**
+
+## Time complexity of the algorithm
