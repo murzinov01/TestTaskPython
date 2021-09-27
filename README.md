@@ -5,6 +5,7 @@ Test task implementation for STM Labs
 * **git clone https://github.com/murzinov01/TestTaskPython.git**
 * **cd TestTaskPython**
 * **py main.py file_to_data ip_type**  
+
 Examples:
     + **py main.py data/ipv4_data_set.txt ipv4**
     + **py main.py data/ipv6_data_set.txt ipv6**
